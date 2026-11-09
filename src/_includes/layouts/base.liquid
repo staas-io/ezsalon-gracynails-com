@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title | default: 'Gracy Nails & Beauty Salon | Charlottetown, PEI' }}</title>
+  <meta name="description" content="{{ description | default: 'Artistic nail and beauty salon in downtown Charlottetown, PEI. Manicure, pedicure, biogel nails, lashes — walk-ins welcome.' }}" />
+  <link rel="canonical" href="https://gracynails.com{{ page.url }}" />
+  <meta property="og:title" content="{{ title | default: 'Gracy Nails & Beauty Salon' }}" />
+  <meta property="og:description" content="Artistic nail and beauty salon in downtown Charlottetown, PEI." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/images/logo.webp" />
+  <link rel="preload" as="image" href="/images/summer-promo-banner.webp" />
+  <link rel="icon" href="/images/logo.webp" type="image/webp" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body data-services-api="https://gracynails.staas.io/api/services" data-settings-api="https://gracynails.staas.io/api/settings">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Gracy Nails home">
+        <img src="/images/logo.webp" alt="Gracy Nails" width="180" height="67" decoding="async" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">☰</button>
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+        <a href="/#home">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#gallery">Gallery</a>
+        <a href="/services/">Services</a>
+        <a href="/#contact">Contact</a>
+        <a class="btn btn-gold btn-sm" href="/booking/">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="/images/logo.webp" alt="Gracy Nails" width="150" height="56" loading="lazy" class="footer-logo" />
+        <p>Nail art &amp; beauty salon in downtown Charlottetown, PEI.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/gracynailsbeauty/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+          <a href="https://www.instagram.com/gracynailsbeauty/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul>
+          <li><a href="/services/">Services &amp; Prices</a></li>
+          <li><a href="/booking/">Book Online</a></li>
+          <li><a href="/#about">About Us</a></li>
+          <li><a href="/#gallery">Gallery</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h2 class="footer-heading">Contact</h2>
+        <p id="footer-address">146 Prince Street<br />Charlottetown, PEI, C1A4R6<br />Corner of Prince and Grafton St</p>
+        <p><a id="footer-phone" href="tel:9023306261">902-330-6261</a></p>
+        <p><a id="footer-email" href="mailto:gracynailsbeauty@gmail.com">gracynailsbeauty@gmail.com</a></p>
+      </div>
+      <div class="footer-hours">
+        <h2 class="footer-heading">Hours</h2>
+        <p id="footer-hours">Mon – Sat: 9 AM – 7 PM<br />Sunday: Closed</p>
+        <p class="muted">Group bookings available for parties &amp; events.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Gracy Nails &amp; Beauty Salon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/dynamic-content.js" defer></script>
+</body>
+</html>

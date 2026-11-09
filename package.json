@@ -1,0 +1,15 @@
+{
+  "name": "gracynails",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gracy Nails & Beauty Salon — Eleventy replication of gracynails.com",
+  "scripts": {
+    "build": "bunx @11ty/eleventy",
+    "start": "bunx @11ty/eleventy --serve --port=9001",
+    "serve": "bunx serve docs",
+    "dev": "bunx @11ty/eleventy --serve --port=9001"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.0"
+  }
+}
