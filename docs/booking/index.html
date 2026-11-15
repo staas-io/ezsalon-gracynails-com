@@ -55,7 +55,14 @@
 						"Tuesday",
 						"Wednesday",
 						"Thursday",
-						"Friday",
+						"Friday"
+					],
+					"opens": "09:00",
+					"closes": "20:30"
+				},
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
 						"Saturday"
 					],
 					"opens": "09:00",
@@ -85,120 +92,6 @@
 					"position": 2,
 					"name": "Book an Appointment",
 					"item": "https://gracynails.com/booking/"
-				}
-			]
-		},
-		{
-			"@type": "Offer",
-			"name": "Thursday Happy Hour",
-			"description": "Gracy Nails & Beauty Salon in Charlottetown takes 20% off every service except the Senior Pamper Combo on Thursdays from 9:00 AM to 4:00 PM, November 1, 2026 to April 30, 2027. Book at least 24 hours ahead. Thursday Happy Hour does not apply on December 24 and December 31.",
-			"url": "https://gracynails.com/happy-hour/",
-			"category": "Discount",
-			"validFrom": "2026-11-01",
-			"validThrough": "2027-04-30",
-			"hoursAvailable": {
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": "Thursday",
-				"opens": "09:00",
-				"closes": "16:00"
-			},
-			"seller": {
-				"@id": "https://gracynails.com/#salon"
-			}
-		},
-		{
-			"@type": "FAQPage",
-			"mainEntity": [
-				{
-					"@type": "Question",
-					"name": "Does Gracy Nails & Beauty Salon have a Thursday discount?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Yes. Thursday Happy Hour gives 20% off every service on Thursdays from 9:00 AM to 4:00 PM."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "Which services are included in Thursday Happy Hour?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "All services on our price list except the Senior Pamper Combo, which is a separate offer and does not combine with Thursday Happy Hour."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "Do I need to book ahead for Thursday Happy Hour?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Yes. Book at least 24 hours before your Thursday appointment online or by phone."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "When does Thursday Happy Hour run?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "From November 1, 2026 to April 30, 2027. It does not apply on December 24 and December 31."
-					}
-				}
-			]
-		},
-		{
-			"@type": "Offer",
-			"name": "Senior Pamper Combo",
-			"description": "The Senior Pamper Combo at Gracy Nails & Beauty Salon in Charlottetown is a regular manicure and a regular pedicure for $65 (regular $80, 90 minutes), Mondays and Tuesdays 10:00 AM to 2:00 PM, November 1, 2026 to April 30, 2027. Book at least 24 hours ahead. Appointments only: there are no walk-ins for the Senior Pamper Combo, and it needs at least 24 hours advance booking. It is not part of Thursday Happy Hour and does not combine with it.",
-			"url": "https://gracynails.com/senior-pamper-combo/",
-			"price": 65,
-			"priceCurrency": "CAD",
-			"validFrom": "2026-11-01",
-			"validThrough": "2027-04-30",
-			"hoursAvailable": {
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": [
-					"Monday",
-					"Tuesday"
-				],
-				"opens": "10:00",
-				"closes": "14:00"
-			},
-			"seller": {
-				"@id": "https://gracynails.com/#salon"
-			}
-		},
-		{
-			"@type": "FAQPage",
-			"mainEntity": [
-				{
-					"@type": "Question",
-					"name": "What is the Senior Pamper Combo?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "A package of a regular manicure and a regular pedicure for $65 instead of $80, about 90 minutes, in quiet salon hours. \"Senior\" is the name of the package; there is no age limit."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "When is the Senior Pamper Combo available?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Mondays and Tuesdays, 10:00 AM to 2:00 PM, November 1, 2026 to April 30, 2027."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "Can I walk in for the Senior Pamper Combo?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Appointments only: there are no walk-ins for the Senior Pamper Combo, and it needs at least 24 hours advance booking."
-					}
-				},
-				{
-					"@type": "Question",
-					"name": "Can I use Thursday Happy Hour on the Senior Pamper Combo?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "It is not part of Thursday Happy Hour and does not combine with it."
-					}
 				}
 			]
 		}
@@ -233,115 +126,48 @@
     <p class="eyebrow">Schedule your visit</p>
     <h1 class="section-title">Book an Appointment</h1>
     <div class="section-divider"><span style="color:var(--gold)">✽</span></div>
-    <p class="sub">Prefer to call? <a id="booking-phone" href="tel:9023306261">902-330-6261</a></p>
+    <p class="btn-row">
+      <a class="btn btn-gold" id="booking-call" href="tel:9023306261">Call 902-330-6261</a>
+      <a class="btn btn-outline-gold" href="https://gracynails.staas.io/book.html?form=1" target="_blank" rel="noopener noreferrer">Open booking form</a>
+    </p>
+    <p class="sub">Phone: <a id="booking-phone" href="tel:9023306261">902-330-6261</a>. You'll get a confirmation text. To cancel or reschedule, call the salon.</p>
   </div>
 </section>
-
-<section class="section" id="happy-hour" aria-labelledby="happy-hour-title">
-  <div class="wrap">
-    <h2 id="happy-hour-title">Thursday Happy Hour: 20% off every Thursday</h2>
-    <p>Gracy Nails &amp; Beauty Salon in Charlottetown takes 20% off every service except the Senior Pamper Combo on Thursdays from 9:00 AM to 4:00 PM, November 1, 2026 to April 30, 2027. Book at least 24 hours ahead.</p>
-    <ul>
-      <li>20% off every service on the price list, except the Senior Pamper Combo.</li>
-      <li>Thursdays, 9:00 AM to 4:00 PM.</li>
-      <li>Valid November 1, 2026 to April 30, 2027.</li>
-      <li>Book at least 24 hours in advance.</li>
-      <li>Thursday Happy Hour does not apply on December 24 and December 31.</li>
-    </ul>
-    <h3>Thursday Happy Hour questions</h3>
-    <dl>
-      <dt>Does Gracy Nails &amp; Beauty Salon have a Thursday discount?</dt>
-      <dd>Yes. Thursday Happy Hour gives 20% off every service on Thursdays from 9:00 AM to 4:00 PM.</dd>
-      <dt>Which services are included in Thursday Happy Hour?</dt>
-      <dd>All services on our price list except the Senior Pamper Combo, which is a separate offer and does not combine with Thursday Happy Hour.</dd>
-      <dt>Do I need to book ahead for Thursday Happy Hour?</dt>
-      <dd>Yes. Book at least 24 hours before your Thursday appointment online or by phone.</dd>
-      <dt>When does Thursday Happy Hour run?</dt>
-      <dd>From November 1, 2026 to April 30, 2027. It does not apply on December 24 and December 31.</dd>
-    </dl>
-  </div>
-</section>
-
-<section class="section" id="senior-pamper-combo" aria-labelledby="senior-combo-title">
-  <div class="wrap">
-    <h2 id="senior-combo-title">Senior Pamper Combo: $65 for manicure and pedicure</h2>
-    <p>The Senior Pamper Combo at Gracy Nails &amp; Beauty Salon in Charlottetown is a regular manicure and a regular pedicure for $65 (regular $80, 90 minutes), Mondays and Tuesdays 10:00 AM to 2:00 PM, November 1, 2026 to April 30, 2027. Book at least 24 hours ahead.</p>
-    <ul>
-      <li>1 regular manicure ($35 value)</li>
-      <li>1 regular pedicure ($45 value)</li>
-      <li>Package price $65, regular $80: save $15 (about 19% off).</li>
-      <li>Mondays and Tuesdays, 10:00 AM to 2:00 PM, November 1, 2026 to April 30, 2027.</li>
-      <li>Appointments only: there are no walk-ins for the Senior Pamper Combo, and it needs at least 24 hours advance booking.</li>
-      <li>It is not part of Thursday Happy Hour and does not combine with it.</li>
-    </ul>
-    <h3>Senior Pamper Combo questions</h3>
-    <dl>
-      <dt>What is the Senior Pamper Combo?</dt>
-      <dd>A package of a regular manicure and a regular pedicure for $65 instead of $80, about 90 minutes, in quiet salon hours. &quot;Senior&quot; is the name of the package; there is no age limit.</dd>
-      <dt>When is the Senior Pamper Combo available?</dt>
-      <dd>Mondays and Tuesdays, 10:00 AM to 2:00 PM, November 1, 2026 to April 30, 2027.</dd>
-      <dt>Can I walk in for the Senior Pamper Combo?</dt>
-      <dd>Appointments only: there are no walk-ins for the Senior Pamper Combo, and it needs at least 24 hours advance booking.</dd>
-      <dt>Can I use Thursday Happy Hour on the Senior Pamper Combo?</dt>
-      <dd>It is not part of Thursday Happy Hour and does not combine with it.</dd>
-    </dl>
-  </div>
-</section>
-
 
 <section class="section">
   <div class="wrap">
-    <div class="booking-shell">
-      <div class="contact-card">
-        <h2>Gracy Nails</h2>
-        <p id="visit-address">146 Prince Street, downtown, Charlottetown</p>
-        <p>Charlottetown, PEI, C1A 4R6<br />Corner of Prince and Grafton St</p>
-        <p id="about-notes">Walk-ins welcome. Services: nail extensions, manicure/pedicure, head spa and facial, body massage, waxing/threading.</p>
-        <p>We have a receptionist available 24/7. Don't hesitate to call us!</p>
-        <h3>Book by phone</h3>
-        <p><a class="btn btn-gold" id="booking-call" href="tel:9023306261">Call 902-330-6261</a></p>
-        <h3>Hours</h3>
-        <p id="visit-hours-compact">Monday – Saturday: 9:00 AM – 7:00 PM<br />Sunday: Closed</p>
-        <table class="hours-table" id="visit-hours-table" aria-label="Opening hours">
+    <iframe
+      class="booking-frame"
+      title="Gracy Nails - Book an appointment"
+      src="https://gracynails.staas.io/book.html?form=1"
+      referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+    <p class="muted center">If the form doesn't load, <a href="https://gracynails.staas.io/book.html?form=1" target="_blank" rel="noopener noreferrer">open it in a new tab</a> or call us.</p>
+    <p class="center">Current offers: <a href="/happy-hour/">Thursday Happy Hour</a> and <a href="/senior-pamper-combo/">Senior Pamper Combo</a>. See <a href="/services/">services and prices</a>.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-card">
+      <h2>Gracy Nails</h2>
+      <p id="visit-address">146 Prince Street, downtown, Charlottetown</p>
+      <p>Charlottetown, PEI, C1A 4R6<br />Corner of Prince and Grafton St</p>
+      <p id="about-notes">Walk-ins welcome. Services: nail extensions, manicure/pedicure, head spa and facial, body massage, waxing/threading.</p>
+      <p>We have a receptionist available 24/7. Don't hesitate to call us!</p>
+      <h3>Hours</h3>
+      <table class="hours-table" id="visit-hours-table" aria-label="Opening hours">
           <tbody>
-            <tr><th scope="row">Monday</th><td>9:00 AM – 7:00 PM</td></tr>
-            <tr><th scope="row">Tuesday</th><td>9:00 AM – 7:00 PM</td></tr>
-            <tr><th scope="row">Wednesday</th><td>9:00 AM – 7:00 PM</td></tr>
-            <tr><th scope="row">Thursday</th><td>9:00 AM – 7:00 PM</td></tr>
-            <tr><th scope="row">Friday</th><td>9:00 AM – 7:00 PM</td></tr>
+            <tr><th scope="row">Monday</th><td>9:00 AM – 8:30 PM</td></tr>
+            <tr><th scope="row">Tuesday</th><td>9:00 AM – 8:30 PM</td></tr>
+            <tr><th scope="row">Wednesday</th><td>9:00 AM – 8:30 PM</td></tr>
+            <tr><th scope="row">Thursday</th><td>9:00 AM – 8:30 PM</td></tr>
+            <tr><th scope="row">Friday</th><td>9:00 AM – 8:30 PM</td></tr>
             <tr><th scope="row">Saturday</th><td>9:00 AM – 7:00 PM</td></tr>
             <tr><th scope="row">Sunday</th><td>Closed</td></tr>
           </tbody>
         </table>
-        <p><a class="link-gold" id="booking-map-link" href="https://maps.google.com/?q=146%20Prince%20Street%2C%20downtown%2C%20Charlottetown" target="_blank" rel="noopener noreferrer">Open in Google Maps →</a></p>
-        <p class="muted">Prefer to book online? The live booking form is embedded on the right.</p>
-      </div>
-
-      <div>
-        <div class="contact-card" style="margin-bottom:16px">
-          <h2 style="font-size:1.4rem;margin:0 0 8px">Online booking</h2>
-          <p class="muted" style="margin:0">If the booking form doesn't load, <a href="https://gracynails.staas.io/book.html?form=1" target="_blank" rel="noopener noreferrer">click here to book directly</a>.</p>
-        </div>
-        <iframe
-          class="booking-frame"
-          title="Gracy Nails - Book an appointment"
-          src="https://gracynails.staas.io/book.html?form=1"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
-        <p class="muted" style="margin-top:10px">You'll get a confirmation text. To cancel or reschedule, call the salon at <a href="tel:9023306261">902-330-6261</a>.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-banner section" aria-label="Order at a glance">
-  <div class="wrap center">
-    <h2 class="section-title">What happens next?</h2>
-    <p class="sub">Your info → Who's coming? → Choose date &amp; time → Confirm appointment → You're booked!</p>
-    <div class="btn-row">
-      <a class="btn btn-gold" href="https://gracynails.staas.io/book.html?form=1" target="_blank" rel="noopener noreferrer">Open booking form</a>
-      <a class="btn btn-outline-gold" href="/services/">View services &amp; prices</a>
+      <p><a class="link-gold" id="booking-map-link" href="https://maps.google.com/?q=146%20Prince%20Street%2C%20downtown%2C%20Charlottetown" target="_blank" rel="noopener noreferrer">Open in Google Maps →</a></p>
     </div>
   </div>
 </section>
@@ -378,7 +204,7 @@
       </div>
       <div class="footer-hours">
         <h2 class="footer-heading">Hours</h2>
-        <p id="footer-hours">Mon – Sat: 9 AM – 7 PM<br />Sunday: Closed</p>
+        <p id="footer-hours">Mon – Fri: 9 AM – 8:30 PM<br />Sat: 9 AM – 7 PM<br />Sunday: Closed</p>
         <p class="muted">Group bookings available for parties &amp; events.</p>
       </div>
     </div>
