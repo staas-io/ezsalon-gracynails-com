@@ -7,8 +7,12 @@
   <meta name="description" content="{{ description | default: 'Artistic nail and beauty salon in downtown Charlottetown, PEI. Manicure, pedicure, biogel nails, lashes — walk-ins welcome.' }}" />
   <link rel="canonical" href="https://gracynails.com{{ page.url }}" />
   <meta property="og:title" content="{{ title | default: 'Gracy Nails & Beauty Salon' }}" />
-  <meta property="og:description" content="Artistic nail and beauty salon in downtown Charlottetown, PEI." />
+  <meta property="og:description" content="{{ description | default: 'Artistic nail and beauty salon in downtown Charlottetown, PEI.' }}" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Gracy Nails &amp; Beauty Salon" />
+  <meta property="og:url" content="https://gracynails.com{{ page.url }}" />
+  <meta property="og:image" content="https://gracynails.com/images/gracy-outdoor.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -16,6 +20,7 @@
   <link rel="preload" as="image" href="/images/summer-promo-banner.webp" />
   <link rel="icon" href="/images/logo.webp" type="image/webp" />
   <link rel="stylesheet" href="/css/style.css" />
+  {% if jsonld %}{% include jsonld %}{% endif %}
 </head>
 <body data-services-api="https://gracynails.staas.io/api/services" data-settings-api="https://gracynails.staas.io/api/settings">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -62,9 +67,9 @@
       </nav>
       <div class="footer-contact">
         <h2 class="footer-heading">Contact</h2>
-        <p id="footer-address">146 Prince Street<br />Charlottetown, PEI, C1A4R6<br />Corner of Prince and Grafton St</p>
+        <p id="footer-address">146 Prince Street<br />Charlottetown, PEI, C1A 4R6<br />Corner of Prince and Grafton St</p>
         <p><a id="footer-phone" href="tel:9023306261">902-330-6261</a></p>
-        <p><a id="footer-email" href="mailto:gracynailsbeauty@gmail.com">gracynailsbeauty@gmail.com</a></p>
+        <p><a id="footer-email" href="mailto:brightlifewellness.inc@gmail.com">brightlifewellness.inc@gmail.com</a></p>
       </div>
       <div class="footer-hours">
         <h2 class="footer-heading">Hours</h2>
