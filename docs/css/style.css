@@ -58,6 +58,10 @@ a{color:inherit;text-decoration:none}
 /* Promo + hero */
 .promo{display:block;background:#fff}
 .promo img{width:100%;max-height:320px;object-fit:cover}
+.promo{background:var(--gold-tint);border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
+.promo-inner{max-width:var(--wrap);margin:0 auto;padding:16px 20px;text-align:center}
+.promo-offer{margin:0 0 6px;font-size:1.1rem}
+.promo-note{margin:0;font-size:.95rem;color:var(--gold-dark);font-weight:600}
 .hero{position:relative;min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;background:#222}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,.35) 45%,rgba(0,0,0,.55))}
