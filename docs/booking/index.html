@@ -91,7 +91,7 @@
 		{
 			"@type": "Offer",
 			"name": "Thursday Happy Hour",
-			"description": "Gracy Nails & Beauty Salon in Charlottetown takes 20% off every service on Thursdays from 9:00 AM to 4:00 PM, November 1, 2026 to April 30, 2027. Book at least 24 hours ahead. Thursday Happy Hour does not apply on December 24 and December 31.",
+			"description": "Gracy Nails & Beauty Salon in Charlottetown takes 20% off every service except the Senior Pamper Combo on Thursdays from 9:00 AM to 4:00 PM, November 1, 2026 to April 30, 2027. Book at least 24 hours ahead. Thursday Happy Hour does not apply on December 24 and December 31.",
 			"url": "https://gracynails.com/booking/",
 			"category": "Discount",
 			"validFrom": "2026-11-01",
@@ -122,7 +122,7 @@
 					"name": "Which services are included in Thursday Happy Hour?",
 					"acceptedAnswer": {
 						"@type": "Answer",
-						"text": "All services on our price list."
+						"text": "All services on our price list except the Senior Pamper Combo, which is a separate offer and does not combine with Thursday Happy Hour."
 					}
 				},
 				{
@@ -139,6 +139,65 @@
 					"acceptedAnswer": {
 						"@type": "Answer",
 						"text": "From November 1, 2026 to April 30, 2027. It does not apply on December 24 and December 31."
+					}
+				}
+			]
+		},
+		{
+			"@type": "Offer",
+			"name": "Senior Pamper Combo",
+			"description": "The Senior Pamper Combo at Gracy Nails & Beauty Salon in Charlottetown is a regular manicure and a regular pedicure for $65 (regular $80, 90 minutes), Mondays and Tuesdays 10:00 AM to 2:00 PM, November 1, 2026 to April 30, 2027. Book at least 24 hours ahead. Appointments only: there are no walk-ins for the Senior Pamper Combo, and it needs at least 24 hours advance booking. It is not part of Thursday Happy Hour and does not combine with it.",
+			"url": "https://gracynails.com/booking/",
+			"price": 65,
+			"priceCurrency": "CAD",
+			"validFrom": "2026-11-01",
+			"validThrough": "2027-04-30",
+			"hoursAvailable": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday"
+				],
+				"opens": "10:00",
+				"closes": "14:00"
+			},
+			"seller": {
+				"@id": "https://gracynails.com/#salon"
+			}
+		},
+		{
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "What is the Senior Pamper Combo?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "A package of a regular manicure and a regular pedicure for $65 instead of $80, about 90 minutes, in quiet salon hours. \"Senior\" is the name of the package; there is no age limit."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "When is the Senior Pamper Combo available?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Mondays and Tuesdays, 10:00 AM to 2:00 PM, November 1, 2026 to April 30, 2027."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can I walk in for the Senior Pamper Combo?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Appointments only: there are no walk-ins for the Senior Pamper Combo, and it needs at least 24 hours advance booking."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can I use Thursday Happy Hour on the Senior Pamper Combo?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "It is not part of Thursday Happy Hour and does not combine with it."
 					}
 				}
 			]
@@ -181,9 +240,9 @@
 <section class="section" id="happy-hour" aria-labelledby="happy-hour-title">
   <div class="wrap">
     <h2 id="happy-hour-title">Thursday Happy Hour: 20% off every Thursday</h2>
-    <p>Gracy Nails &amp; Beauty Salon in Charlottetown takes 20% off every service on Thursdays from 9:00 AM to 4:00 PM, November 1, 2026 to April 30, 2027. Book at least 24 hours ahead.</p>
+    <p>Gracy Nails &amp; Beauty Salon in Charlottetown takes 20% off every service except the Senior Pamper Combo on Thursdays from 9:00 AM to 4:00 PM, November 1, 2026 to April 30, 2027. Book at least 24 hours ahead.</p>
     <ul>
-      <li>20% off every service on the price list.</li>
+      <li>20% off every service on the price list, except the Senior Pamper Combo.</li>
       <li>Thursdays, 9:00 AM to 4:00 PM.</li>
       <li>Valid November 1, 2026 to April 30, 2027.</li>
       <li>Book at least 24 hours in advance.</li>
@@ -194,11 +253,37 @@
       <dt>Does Gracy Nails &amp; Beauty Salon have a Thursday discount?</dt>
       <dd>Yes. Thursday Happy Hour gives 20% off every service on Thursdays from 9:00 AM to 4:00 PM.</dd>
       <dt>Which services are included in Thursday Happy Hour?</dt>
-      <dd>All services on our price list.</dd>
+      <dd>All services on our price list except the Senior Pamper Combo, which is a separate offer and does not combine with Thursday Happy Hour.</dd>
       <dt>Do I need to book ahead for Thursday Happy Hour?</dt>
       <dd>Yes. Book at least 24 hours before your Thursday appointment online or by phone.</dd>
       <dt>When does Thursday Happy Hour run?</dt>
       <dd>From November 1, 2026 to April 30, 2027. It does not apply on December 24 and December 31.</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="senior-pamper-combo" aria-labelledby="senior-combo-title">
+  <div class="wrap">
+    <h2 id="senior-combo-title">Senior Pamper Combo: $65 for manicure and pedicure</h2>
+    <p>The Senior Pamper Combo at Gracy Nails &amp; Beauty Salon in Charlottetown is a regular manicure and a regular pedicure for $65 (regular $80, 90 minutes), Mondays and Tuesdays 10:00 AM to 2:00 PM, November 1, 2026 to April 30, 2027. Book at least 24 hours ahead.</p>
+    <ul>
+      <li>1 regular manicure ($35 value)</li>
+      <li>1 regular pedicure ($45 value)</li>
+      <li>Package price $65, regular $80: save $15 (about 19% off).</li>
+      <li>Mondays and Tuesdays, 10:00 AM to 2:00 PM, November 1, 2026 to April 30, 2027.</li>
+      <li>Appointments only: there are no walk-ins for the Senior Pamper Combo, and it needs at least 24 hours advance booking.</li>
+      <li>It is not part of Thursday Happy Hour and does not combine with it.</li>
+    </ul>
+    <h3>Senior Pamper Combo questions</h3>
+    <dl>
+      <dt>What is the Senior Pamper Combo?</dt>
+      <dd>A package of a regular manicure and a regular pedicure for $65 instead of $80, about 90 minutes, in quiet salon hours. &quot;Senior&quot; is the name of the package; there is no age limit.</dd>
+      <dt>When is the Senior Pamper Combo available?</dt>
+      <dd>Mondays and Tuesdays, 10:00 AM to 2:00 PM, November 1, 2026 to April 30, 2027.</dd>
+      <dt>Can I walk in for the Senior Pamper Combo?</dt>
+      <dd>Appointments only: there are no walk-ins for the Senior Pamper Combo, and it needs at least 24 hours advance booking.</dd>
+      <dt>Can I use Thursday Happy Hour on the Senior Pamper Combo?</dt>
+      <dd>It is not part of Thursday Happy Hour and does not combine with it.</dd>
     </dl>
   </div>
 </section>
