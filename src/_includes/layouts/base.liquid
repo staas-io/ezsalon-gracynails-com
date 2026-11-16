@@ -23,6 +23,9 @@
   <link rel="icon" href="/images/logo.webp" type="image/webp" />
   <link rel="stylesheet" href="/css/style.css" />
   {% if jsonld %}{% include jsonld %}{% endif %}
+  {% assign googleTagId = "AW-11172427041" %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ googleTagId }}"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","{{ googleTagId }}");</script>
 </head>
 <body data-services-api="https://gracynails.staas.io/api/services" data-settings-api="https://gracynails.staas.io/api/settings">
   <a class="skip-link" href="#main">Skip to content</a>
