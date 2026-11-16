@@ -29,3 +29,10 @@
     btn.setAttribute('aria-hidden', 'true');
   });
 })();
+
+// Google Ads conversion: any tel: link click
+document.addEventListener('click', function (e) {
+  var link = e.target.closest && e.target.closest('a[href^="tel:"]');
+  if (!link || typeof gtag !== 'function') return;
+  gtag('event', 'conversion', { send_to: 'AW-11172427041/aoDrCOyOnLkdEKHqts8p' });
+});
