@@ -125,6 +125,7 @@ a{color:inherit;text-decoration:none}
 .booking-shell{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:start}
 @media (max-width:900px){.booking-shell{grid-template-columns:1fr}}
 .booking-frame{width:100%;min-height:1100px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+.booking-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 @media (max-width:700px){.booking-frame,.booking-fallback{display:none}}
 .hours-table{width:100%;border-collapse:collapse}
 .hours-table th,.hours-table td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
